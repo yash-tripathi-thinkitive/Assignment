@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+
+	<class name="com.thinkitive.User" table="admin">
+		<id name="id" column="id" type="int">
+			<generator class="assigned"></generator>
+		</id>
+
+		<property name="name" column="name" type="string"></property>
+		<property name="password" column="password" type="string"></property>
+		<property name="designation" column="designation" type="string"></property>
+
+	</class>
+
+
+
+
+</hibernate-mapping> 
