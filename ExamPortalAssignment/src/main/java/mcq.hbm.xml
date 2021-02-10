@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+
+	<class name="com.thinkitive.ExamPages" table="Mcq">
+		<id name="number" column="number" type="int">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="questions" column="questions" type="string"></property>
+		<property name="option1" column="option1" type="string"></property>
+		<property name="option2" column="option2" type="string"></property>
+		<property name="option3" column="option3" type="string"></property>
+		<property name="correctoption" column="correctoption" type="string"></property>
+	</class>
+
+
+
+
+</hibernate-mapping> 
